@@ -1,0 +1,19 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Productos</title>
+</head>
+<body>
+	<h1>Productos en venta</h1>
+
+	<ul>
+		{% for publicacion in object_list %}
+			<li><b>Nombre</b>{{publicacion.nombre}}</li>
+			<li><b>Precio</b>{{publicacion.precio_producto}}</li>
+			<li><b>Unidades</b>{{publicacion.unidades}}</li>
+			<li><b>Descripcion</b>{{publicacion.descripcion}}</li>
+			<li><b>Estado</b>{{publicacion.estado}}</li>
+		{% endfor %}	
+	</ul>
+</body>
+</html>
